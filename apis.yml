@@ -135,7 +135,7 @@ common:
     url: https://www.cfo.gov/members/
   - type: Contact
     url: mailto:CFOC.support@gsa.gov
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.cfo.gov/privacy-policy/
   - type: AccessibilityStatement
     url: https://www.cfo.gov/accessibility/
