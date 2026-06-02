@@ -1,0 +1,182 @@
+openapi: 3.1.0
+info:
+  title: USAspending.gov API (CFO Council context)
+  description: |-
+    The Chief Financial Officers Council itself does not operate a developer API. This
+    best-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the
+    U.S. Department of the Treasury, which is the primary federal financial-management
+    data API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.
+  version: "2026-05-23"
+  contact:
+    name: USAspending.gov
+    url: https://api.usaspending.gov/docs/endpoints
+  license:
+    name: Public Domain (U.S. Government Work)
+servers:
+  - url: https://api.usaspending.gov
+    description: Production
+tags:
+  - name: Agencies
+  - name: Awards
+  - name: Federal Accounts
+  - name: Recipients
+  - name: Search
+  - name: Downloads
+  - name: References
+  - name: Subawards
+paths:
+  /api/v2/agency/{TOPTIER_AGENCY_CODE}/:
+    parameters:
+      - $ref: '#/components/parameters/ToptierAgencyCode'
+    get:
+      tags: [Agencies]
+      summary: Retrieve agency overview
+      operationId: getAgencyOverview
+      responses:
+        "200":
+          description: Agency overview
+  /api/v2/agency/{TOPTIER_AGENCY_CODE}/awards/:
+    parameters:
+      - $ref: '#/components/parameters/ToptierAgencyCode'
+    get:
+      tags: [Agencies, Awards]
+      summary: Agency award summaries
+      operationId: getAgencyAwards
+      responses:
+        "200":
+          description: Award summaries for the agency
+  /api/v2/awards/{AWARD_ID}/:
+    parameters:
+      - name: AWARD_ID
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Awards]
+      summary: Get award details
+      operationId: getAward
+      responses:
+        "200":
+          description: Award details
+  /api/v2/awards/accounts/:
+    post:
+      tags: [Awards]
+      summary: List federal accounts for an award
+      operationId: listAwardAccounts
+      responses:
+        "200":
+          description: Federal accounts
+  /api/v2/federal_accounts/{ACCOUNT_CODE}/:
+    parameters:
+      - name: ACCOUNT_CODE
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Federal Accounts]
+      summary: Federal account information
+      operationId: getFederalAccount
+      responses:
+        "200":
+          description: Federal account record
+  /api/v2/recipient/:
+    post:
+      tags: [Recipients]
+      summary: Retrieve recipient listings
+      operationId: listRecipients
+      responses:
+        "200":
+          description: A list of recipients
+  /api/v2/recipient/{HASH_VALUE}/:
+    parameters:
+      - name: HASH_VALUE
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [Recipients]
+      summary: Get recipient overview
+      operationId: getRecipient
+      responses:
+        "200":
+          description: Recipient details
+  /api/v2/search/spending_by_award/:
+    post:
+      tags: [Search]
+      summary: Search spending by award (filtered)
+      operationId: searchSpendingByAward
+      responses:
+        "200":
+          description: Award-level spending results
+  /api/v2/search/spending_by_category/{category}/:
+    parameters:
+      - name: category
+        in: path
+        required: true
+        schema:
+          type: string
+    post:
+      tags: [Search]
+      summary: Spending broken down by category
+      operationId: searchSpendingByCategory
+      responses:
+        "200":
+          description: Categorized spending results
+  /api/v2/search/spending_over_time/:
+    post:
+      tags: [Search]
+      summary: Spending over time
+      operationId: searchSpendingOverTime
+      responses:
+        "200":
+          description: Time-series spending
+  /api/v2/download/awards/:
+    post:
+      tags: [Downloads]
+      summary: Generate downloadable award data CSV
+      operationId: downloadAwards
+      responses:
+        "200":
+          description: Download generation accepted
+  /api/v2/references/toptier_agencies/:
+    get:
+      tags: [References]
+      summary: List top-tier agencies
+      operationId: listToptierAgencies
+      responses:
+        "200":
+          description: A list of top-tier agencies
+  /api/v2/references/naics/{NAICS_CODE}/:
+    parameters:
+      - name: NAICS_CODE
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      tags: [References]
+      summary: NAICS classification data
+      operationId: getNaics
+      responses:
+        "200":
+          description: NAICS reference data
+  /api/v2/subawards/:
+    post:
+      tags: [Subawards]
+      summary: Query subaward information
+      operationId: querySubawards
+      responses:
+        "200":
+          description: Subawards data
+components:
+  parameters:
+    ToptierAgencyCode:
+      name: TOPTIER_AGENCY_CODE
+      in: path
+      required: true
+      description: Top-tier (3-digit Treasury Account Symbol) agency code
+      schema:
+        type: string
