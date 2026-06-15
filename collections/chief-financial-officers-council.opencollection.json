@@ -1,0 +1,279 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context)",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Agencies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve agency overview",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/agency/:TOPTIER_AGENCY_CODE/",
+            "params": [
+              {
+                "name": "TOPTIER_AGENCY_CODE",
+                "value": "",
+                "type": "path",
+                "description": "Top-tier (3-digit Treasury Account Symbol) agency code"
+              }
+            ]
+          },
+          "docs": "Retrieve agency overview"
+        },
+        {
+          "info": {
+            "name": "Agency award summaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/agency/:TOPTIER_AGENCY_CODE/awards/",
+            "params": [
+              {
+                "name": "TOPTIER_AGENCY_CODE",
+                "value": "",
+                "type": "path",
+                "description": "Top-tier (3-digit Treasury Account Symbol) agency code"
+              }
+            ]
+          },
+          "docs": "Agency award summaries"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Awards",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get award details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/awards/:AWARD_ID/",
+            "params": [
+              {
+                "name": "AWARD_ID",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get award details"
+        },
+        {
+          "info": {
+            "name": "List federal accounts for an award",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/awards/accounts/"
+          },
+          "docs": "List federal accounts for an award"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Federal Accounts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Federal account information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/federal_accounts/:ACCOUNT_CODE/",
+            "params": [
+              {
+                "name": "ACCOUNT_CODE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Federal account information"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Recipients",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve recipient listings",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/recipient/"
+          },
+          "docs": "Retrieve recipient listings"
+        },
+        {
+          "info": {
+            "name": "Get recipient overview",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/recipient/:HASH_VALUE/",
+            "params": [
+              {
+                "name": "HASH_VALUE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get recipient overview"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search spending by award (filtered)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+          },
+          "docs": "Search spending by award (filtered)"
+        },
+        {
+          "info": {
+            "name": "Spending broken down by category",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_category/:category/",
+            "params": [
+              {
+                "name": "category",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Spending broken down by category"
+        },
+        {
+          "info": {
+            "name": "Spending over time",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_over_time/"
+          },
+          "docs": "Spending over time"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Downloads",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate downloadable award data CSV",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/download/awards/"
+          },
+          "docs": "Generate downloadable award data CSV"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "References",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List top-tier agencies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/references/toptier_agencies/"
+          },
+          "docs": "List top-tier agencies"
+        },
+        {
+          "info": {
+            "name": "NAICS classification data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/references/naics/:NAICS_CODE/",
+            "params": [
+              {
+                "name": "NAICS_CODE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "NAICS classification data"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Subawards",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query subaward information",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/subawards/"
+          },
+          "docs": "Query subaward information"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
