@@ -119,6 +119,8 @@ apis:
       reports. The CFO Council collaborates with OMB on financial-management
       Cross-Agency Priority (CAP) goals reported through Performance.gov.
 common:
+  - type: DomainSecurity
+    url: security/chief-financial-officers-council-domain-security.yml
   - type: Website
     url: https://www.cfo.gov/
   - type: About
