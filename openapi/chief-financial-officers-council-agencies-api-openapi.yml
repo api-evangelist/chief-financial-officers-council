@@ -1,0 +1,53 @@
+openapi: 3.1.0
+info:
+  title: USAspending.gov API (CFO Council context) Agencies API
+  description: 'The Chief Financial Officers Council itself does not operate a developer API. This
+
+    best-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the
+
+    U.S. Department of the Treasury, which is the primary federal financial-management
+
+    data API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.'
+  version: '2026-05-23'
+  contact:
+    name: USAspending.gov
+    url: https://api.usaspending.gov/docs/endpoints
+  license:
+    name: Public Domain (U.S. Government Work)
+servers:
+- url: https://api.usaspending.gov
+  description: Production
+tags:
+- name: Agencies
+paths:
+  /api/v2/agency/{TOPTIER_AGENCY_CODE}/:
+    parameters:
+    - $ref: '#/components/parameters/ToptierAgencyCode'
+    get:
+      tags:
+      - Agencies
+      summary: Retrieve agency overview
+      operationId: getAgencyOverview
+      responses:
+        '200':
+          description: Agency overview
+  /api/v2/agency/{TOPTIER_AGENCY_CODE}/awards/:
+    parameters:
+    - $ref: '#/components/parameters/ToptierAgencyCode'
+    get:
+      tags:
+      - Agencies
+      summary: Agency award summaries
+      operationId: getAgencyAwards
+      responses:
+        '200':
+          description: Award summaries for the agency
+components:
+  parameters:
+    ToptierAgencyCode:
+      name: TOPTIER_AGENCY_CODE
+      in: path
+      required: true
+      description: Top-tier (3-digit Treasury Account Symbol) agency code
+      schema:
+        type: string

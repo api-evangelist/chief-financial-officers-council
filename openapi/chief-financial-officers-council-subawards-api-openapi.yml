@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: USAspending.gov API (CFO Council context) Agencies Subawards API
+  description: 'The Chief Financial Officers Council itself does not operate a developer API. This
+
+    best-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the
+
+    U.S. Department of the Treasury, which is the primary federal financial-management
+
+    data API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.'
+  version: '2026-05-23'
+  contact:
+    name: USAspending.gov
+    url: https://api.usaspending.gov/docs/endpoints
+  license:
+    name: Public Domain (U.S. Government Work)
+servers:
+- url: https://api.usaspending.gov
+  description: Production
+tags:
+- name: Subawards
+paths:
+  /api/v2/subawards/:
+    post:
+      tags:
+      - Subawards
+      summary: Query subaward information
+      operationId: querySubawards
+      responses:
+        '200':
+          description: Subawards data

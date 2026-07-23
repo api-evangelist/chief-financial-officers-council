@@ -1,0 +1,46 @@
+openapi: 3.1.0
+info:
+  title: USAspending.gov API (CFO Council context) Agencies References API
+  description: 'The Chief Financial Officers Council itself does not operate a developer API. This
+
+    best-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the
+
+    U.S. Department of the Treasury, which is the primary federal financial-management
+
+    data API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.'
+  version: '2026-05-23'
+  contact:
+    name: USAspending.gov
+    url: https://api.usaspending.gov/docs/endpoints
+  license:
+    name: Public Domain (U.S. Government Work)
+servers:
+- url: https://api.usaspending.gov
+  description: Production
+tags:
+- name: References
+paths:
+  /api/v2/references/toptier_agencies/:
+    get:
+      tags:
+      - References
+      summary: List top-tier agencies
+      operationId: listToptierAgencies
+      responses:
+        '200':
+          description: A list of top-tier agencies
+  /api/v2/references/naics/{NAICS_CODE}/:
+    parameters:
+    - name: NAICS_CODE
+      in: path
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - References
+      summary: NAICS classification data
+      operationId: getNaics
+      responses:
+        '200':
+          description: NAICS reference data
