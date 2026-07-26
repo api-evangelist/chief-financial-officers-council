@@ -10,10 +10,22 @@ tags:
   - OMB
   - Treasury
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chief-financial-officers-council.png
 access: 3rd-Party
 created: '2024-12-03'
-modified: '2026-04-23'
+modified: '2026-07-25'
 position: Consumer
 specificationVersion: '0.19'
 description: >-
@@ -44,10 +56,9 @@ apis:
       - url: https://www.cfo.gov/resources/
         type: Resources
     description: >-
-      The cfo.gov public website is the official portal for the federal CFO
-      Council, hosting member rosters, council news, working-group outputs,
-      financial-management policy guidance, and links to companion federal
-      financial-management resources.
+      The cfo.gov public website is the official portal for the federal CFO Council, hosting member rosters,
+      council news, working-group outputs, financial-management policy guidance, and links to companion
+      federal financial-management resources.
   - aid: chief-financial-officers-council:cfoc-working-groups
     name: CFO Council Working Groups
     tags:
@@ -59,29 +70,9 @@ apis:
       - url: https://www.cfo.gov/working-groups/
         type: Website
     description: >-
-      The CFO Council operates topical working groups covering areas such as
-      financial systems, internal control, grants management, payment
-      integrity, financial reporting, and data analytics. Working-group
-      products including white papers, playbooks, and recommended practices
-      are published on cfo.gov.
-  - aid: chief-financial-officers-council:cfoc-payment-integrity
-    name: PaymentAccuracy.gov (Payment Integrity)
-    tags:
-      - Improper Payments
-      - Open Data
-      - Payment Integrity
-    humanURL: https://www.paymentaccuracy.gov/
-    properties:
-      - url: https://www.paymentaccuracy.gov/
-        type: Website
-      - url: https://www.paymentaccuracy.gov/payment-accuracy-the-numbers/
-        type: Data
-    description: >-
-      PaymentAccuracy.gov is the OMB-maintained transparency site for
-      reporting government-wide improper payments and payment-integrity
-      activities. The site publishes downloadable agency-level payment
-      accuracy datasets that are referenced and used by CFO Council members
-      for benchmarking.
+      The CFO Council operates topical working groups covering areas such as financial systems, internal
+      control, grants management, payment integrity, financial reporting, and data analytics. Working-group
+      products including white papers, playbooks, and recommended practices are published on cfo.gov.
   - aid: chief-financial-officers-council:usaspending
     name: USAspending.gov API (Treasury)
     tags:
@@ -97,27 +88,84 @@ apis:
       - url: https://api.usaspending.gov/api/v2/
         type: BaseURL
     description: >-
-      USAspending.gov is the Treasury-operated public source of accountable
-      federal spending data, exposing a comprehensive REST API for federal
-      awards, contracts, grants, sub-awards, and agency budget data. CFO
-      Council members rely on USAspending data quality and standards
-      (DAIMS) for transparency reporting.
-  - aid: chief-financial-officers-council:max-gov
-    name: MAX.gov / Performance.gov
+      USAspending.gov is the Treasury-operated public source of accountable federal spending data, exposing
+      a comprehensive REST API for federal awards, contracts, grants, sub-awards, and agency budget data.
+      CFO Council members rely on USAspending data quality and standards (DAIMS) for transparency reporting.
+  - aid: chief-financial-officers-council:chief-financial-officers-council-agencies-api
+    name: Chief Financial Officers Council Agencies API
+    description: The Agencies API from Chief Financial Officers Council — 2 operation(s) for agencies.
+    humanURL: https://www.cfo.gov/
     tags:
-      - Performance Management
-      - Treasury Performance
-    humanURL: https://www.performance.gov/
+      - Agencies
     properties:
-      - url: https://www.performance.gov/
-        type: Website
-      - url: https://www.performance.gov/about/
-        type: About
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-agencies-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-awards-api
+    name: Chief Financial Officers Council Awards API
+    description: The Awards API from Chief Financial Officers Council — 3 operation(s) for awards.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Awards
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-awards-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-downloads-api
+    name: Chief Financial Officers Council Downloads API
+    description: The Downloads API from Chief Financial Officers Council — 1 operation(s) for downloads.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Downloads
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-downloads-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-federal-accounts-api
+    name: Chief Financial Officers Council Federal Accounts API
     description: >-
-      Performance.gov is the OMB-administered public site for federal
-      cross-agency priority goals, agency strategic plans, and performance
-      reports. The CFO Council collaborates with OMB on financial-management
-      Cross-Agency Priority (CAP) goals reported through Performance.gov.
+      The Federal Accounts API from Chief Financial Officers Council — 1 operation(s) for federal accounts.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Federal Accounts
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-federal-accounts-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-recipients-api
+    name: Chief Financial Officers Council Recipients API
+    description: >-
+      The Recipients API from Chief Financial Officers Council — 2 operation(s) for recipients.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Recipients
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-recipients-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-references-api
+    name: Chief Financial Officers Council References API
+    description: >-
+      The References API from Chief Financial Officers Council — 2 operation(s) for references.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - References
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-references-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-search-api
+    name: Chief Financial Officers Council Search API
+    description: The Search API from Chief Financial Officers Council — 3 operation(s) for search.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Search
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-search-api-openapi.yml
+  - aid: chief-financial-officers-council:chief-financial-officers-council-subawards-api
+    name: Chief Financial Officers Council Subawards API
+    description: The Subawards API from Chief Financial Officers Council — 1 operation(s) for subawards.
+    humanURL: https://www.cfo.gov/
+    tags:
+      - Subawards
+    properties:
+      - type: OpenAPI
+        url: openapi/chief-financial-officers-council-subawards-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/chief-financial-officers-council-agentic-access.yml

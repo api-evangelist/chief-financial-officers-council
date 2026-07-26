@@ -64,11 +64,6 @@ The CFO Council operates topical working groups covering areas such as financial
 - [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
 - [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
-### PaymentAccuracy.gov (Payment Integrity)
-
-PaymentAccuracy.gov is the OMB-maintained transparency site for reporting government-wide improper payments and payment-integrity activities. The site publishes downloadable agency-level payment accuracy datasets that are referenced and used by CFO Council members for benchmarking.
-
-- **Human URL:** [https://www.paymentaccuracy.gov/](https://www.paymentaccuracy.gov/)
 
 #### Tags
 
@@ -103,11 +98,6 @@ USAspending.gov is the Treasury-operated public source of accountable federal sp
 - [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
 - [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
-### MAX.gov / Performance.gov
-
-Performance.gov is the OMB-administered public site for federal cross-agency priority goals, agency strategic plans, and performance reports. The CFO Council collaborates with OMB on financial-management Cross-Agency Priority (CAP) goals reported through Performance.gov.
-
-- **Human URL:** [https://www.performance.gov/](https://www.performance.gov/)
 
 #### Tags
 
