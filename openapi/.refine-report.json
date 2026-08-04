@@ -1,0 +1,28 @@
+{
+  "provider": "chief-financial-officers-council",
+  "sources": [
+    "chief-financial-officers-council-agencies-api-openapi.yml",
+    "chief-financial-officers-council-awards-api-openapi.yml",
+    "chief-financial-officers-council-downloads-api-openapi.yml",
+    "chief-financial-officers-council-federal-accounts-api-openapi.yml",
+    "chief-financial-officers-council-recipients-api-openapi.yml",
+    "chief-financial-officers-council-references-api-openapi.yml",
+    "chief-financial-officers-council-search-api-openapi.yml",
+    "chief-financial-officers-council-subawards-api-openapi.yml"
+  ],
+  "outputs": [
+    "chief-financial-officers-council-agencies-api-openapi.yml",
+    "chief-financial-officers-council-awards-api-openapi.yml",
+    "chief-financial-officers-council-downloads-api-openapi.yml",
+    "chief-financial-officers-council-federal-accounts-api-openapi.yml",
+    "chief-financial-officers-council-recipients-api-openapi.yml",
+    "chief-financial-officers-council-references-api-openapi.yml",
+    "chief-financial-officers-council-search-api-openapi.yml",
+    "chief-financial-officers-council-subawards-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
