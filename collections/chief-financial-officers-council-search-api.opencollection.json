@@ -1,0 +1,58 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies Search API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Search",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search spending by award (filtered)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+          },
+          "docs": "Search spending by award (filtered)"
+        },
+        {
+          "info": {
+            "name": "Spending broken down by category",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_by_category/:category/",
+            "params": [
+              {
+                "name": "category",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Spending broken down by category"
+        },
+        {
+          "info": {
+            "name": "Spending over time",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/search/spending_over_time/"
+          },
+          "docs": "Spending over time"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

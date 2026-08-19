@@ -1,0 +1,192 @@
+{
+  "item": [
+    {
+      "id": "62e85565-1e42-4755-9ff2-b9117cb0c5b3",
+      "name": "Agencies",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "da39f969-95e3-4d9c-915d-ec4b1e67c004",
+          "name": "Retrieve agency overview",
+          "request": {
+            "name": "Retrieve agency overview",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "agency",
+                ":TOPTIER_AGENCY_CODE",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "TOPTIER_AGENCY_CODE",
+                  "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "76846306-072b-49b0-9258-2c4b360f29ca",
+              "name": "Agency overview",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "agency",
+                    ":TOPTIER_AGENCY_CODE",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "TOPTIER_AGENCY_CODE",
+                      "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a42efa4d-64e5-4448-a812-d5a89e5acdb0",
+          "name": "Agency award summaries",
+          "request": {
+            "name": "Agency award summaries",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "agency",
+                ":TOPTIER_AGENCY_CODE",
+                "awards",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "TOPTIER_AGENCY_CODE",
+                  "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "171acc89-291c-44b4-abd8-7a0331855134",
+              "name": "Award summaries for the agency",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "agency",
+                    ":TOPTIER_AGENCY_CODE",
+                    "awards",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "TOPTIER_AGENCY_CODE",
+                      "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.usaspending.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "71ca7226-edac-495b-b48f-f7ea861f121b",
+    "name": "USAspending.gov API (CFO Council context) Agencies API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Chief Financial Officers Council itself does not operate a developer API. This\nbest-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the\nU.S. Department of the Treasury, which is the primary federal financial-management\ndata API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.\n\nContact Support:\n Name: USAspending.gov",
+      "type": "text/plain"
+    }
+  }
+}

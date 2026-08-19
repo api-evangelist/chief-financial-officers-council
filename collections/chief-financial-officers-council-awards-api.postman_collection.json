@@ -1,0 +1,255 @@
+{
+  "item": [
+    {
+      "id": "ddd95a38-f15f-41e5-9824-a75b7f5eaa9e",
+      "name": "Awards",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "40c2bab1-f64a-4957-96f4-b473d7208c71",
+          "name": "Agency award summaries",
+          "request": {
+            "name": "Agency award summaries",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "agency",
+                ":TOPTIER_AGENCY_CODE",
+                "awards",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "TOPTIER_AGENCY_CODE",
+                  "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "707032ca-7db4-4d09-be23-0cf6e3ac7684",
+              "name": "Award summaries for the agency",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "agency",
+                    ":TOPTIER_AGENCY_CODE",
+                    "awards",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "TOPTIER_AGENCY_CODE",
+                      "description": "(Required) Top-tier (3-digit Treasury Account Symbol) agency code"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "23919e89-ce30-445f-976d-101446c5371c",
+          "name": "Get award details",
+          "request": {
+            "name": "Get award details",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "awards",
+                ":AWARD_ID",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "AWARD_ID",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "409a67f6-d58f-4b02-8f6f-05e9dda88c10",
+              "name": "Award details",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "awards",
+                    ":AWARD_ID",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "AWARD_ID",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9ae4ba4e-1234-4ee7-a2ef-d45f01045460",
+          "name": "List federal accounts for an award",
+          "request": {
+            "name": "List federal accounts for an award",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "awards",
+                "accounts",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7fe8f3a7-f80b-4c43-af2b-44c96f54e18b",
+              "name": "Federal accounts",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "awards",
+                    "accounts",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.usaspending.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "42bc429d-064e-41d6-aa75-109a8a333e3e",
+    "name": "USAspending.gov API (CFO Council context) Agencies Awards API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Chief Financial Officers Council itself does not operate a developer API. This\nbest-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the\nU.S. Department of the Treasury, which is the primary federal financial-management\ndata API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.\n\nContact Support:\n Name: USAspending.gov",
+      "type": "text/plain"
+    }
+  }
+}

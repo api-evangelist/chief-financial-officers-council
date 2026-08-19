@@ -1,0 +1,36 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies Federal Accounts API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Federal Accounts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Federal account information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/federal_accounts/:ACCOUNT_CODE/",
+            "params": [
+              {
+                "name": "ACCOUNT_CODE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Federal account information"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

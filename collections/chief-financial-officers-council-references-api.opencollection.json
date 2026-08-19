@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies References API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "References",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List top-tier agencies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/references/toptier_agencies/"
+          },
+          "docs": "List top-tier agencies"
+        },
+        {
+          "info": {
+            "name": "NAICS classification data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/references/naics/:NAICS_CODE/",
+            "params": [
+              {
+                "name": "NAICS_CODE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "NAICS classification data"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

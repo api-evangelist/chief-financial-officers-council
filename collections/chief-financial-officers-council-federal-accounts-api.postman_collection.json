@@ -1,0 +1,111 @@
+{
+  "item": [
+    {
+      "id": "9ea2b392-57f9-4966-ba20-16d9c5ffc050",
+      "name": "Federal Accounts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "612ccace-bbcf-404d-af83-a5961c72e066",
+          "name": "Federal account information",
+          "request": {
+            "name": "Federal account information",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "federal_accounts",
+                ":ACCOUNT_CODE",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "ACCOUNT_CODE",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bdc5d72f-8245-4bd4-9e40-ee3faa9e038b",
+              "name": "Federal account record",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "federal_accounts",
+                    ":ACCOUNT_CODE",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "ACCOUNT_CODE",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.usaspending.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "15bb8c4b-58e7-4b1d-8e2a-a070ee7c7052",
+    "name": "USAspending.gov API (CFO Council context) Agencies Federal Accounts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Chief Financial Officers Council itself does not operate a developer API. This\nbest-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the\nU.S. Department of the Treasury, which is the primary federal financial-management\ndata API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.\n\nContact Support:\n Name: USAspending.gov",
+      "type": "text/plain"
+    }
+  }
+}

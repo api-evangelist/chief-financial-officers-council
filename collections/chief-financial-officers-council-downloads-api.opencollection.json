@@ -1,0 +1,29 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies Downloads API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Downloads",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate downloadable award data CSV",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/download/awards/"
+          },
+          "docs": "Generate downloadable award data CSV"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

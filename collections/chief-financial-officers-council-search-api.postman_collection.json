@@ -1,0 +1,239 @@
+{
+  "item": [
+    {
+      "id": "6270be6f-dd8f-4dee-b5a7-433413da2d47",
+      "name": "Search",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "afc4d324-786a-4c71-b930-0478c3038717",
+          "name": "Search spending by award (filtered)",
+          "request": {
+            "name": "Search spending by award (filtered)",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "search",
+                "spending_by_award",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "489fae6e-cad1-45bb-9f7a-463ff4ebd93e",
+              "name": "Award-level spending results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "search",
+                    "spending_by_award",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "beba958e-2267-4d65-81a7-1fa23a5d3414",
+          "name": "Spending broken down by category",
+          "request": {
+            "name": "Spending broken down by category",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "search",
+                "spending_by_category",
+                ":category",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "category",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "590a6f54-e9de-460c-8794-026c6526c78f",
+              "name": "Categorized spending results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "search",
+                    "spending_by_category",
+                    ":category",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "category",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fd7f6e52-f500-41b0-a042-aa16be1d9d24",
+          "name": "Spending over time",
+          "request": {
+            "name": "Spending over time",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "search",
+                "spending_over_time",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c9fade2b-ed03-4d77-ad1b-ac0ca30c4060",
+              "name": "Time-series spending",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "search",
+                    "spending_over_time",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.usaspending.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9b53d12d-b285-4cf4-9982-c859c805802c",
+    "name": "USAspending.gov API (CFO Council context) Agencies Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Chief Financial Officers Council itself does not operate a developer API. This\nbest-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the\nU.S. Department of the Treasury, which is the primary federal financial-management\ndata API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.\n\nContact Support:\n Name: USAspending.gov",
+      "type": "text/plain"
+    }
+  }
+}

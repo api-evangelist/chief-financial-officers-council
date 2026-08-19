@@ -1,0 +1,56 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Agencies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve agency overview",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/agency/:TOPTIER_AGENCY_CODE/",
+            "params": [
+              {
+                "name": "TOPTIER_AGENCY_CODE",
+                "value": "",
+                "type": "path",
+                "description": "Top-tier (3-digit Treasury Account Symbol) agency code"
+              }
+            ]
+          },
+          "docs": "Retrieve agency overview"
+        },
+        {
+          "info": {
+            "name": "Agency award summaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/agency/:TOPTIER_AGENCY_CODE/awards/",
+            "params": [
+              {
+                "name": "TOPTIER_AGENCY_CODE",
+                "value": "",
+                "type": "path",
+                "description": "Top-tier (3-digit Treasury Account Symbol) agency code"
+              }
+            ]
+          },
+          "docs": "Agency award summaries"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

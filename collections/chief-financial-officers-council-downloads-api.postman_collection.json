@@ -1,0 +1,95 @@
+{
+  "item": [
+    {
+      "id": "4de930aa-5645-4ee6-a378-7432fa9cb32e",
+      "name": "Downloads",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "986a10de-e9b0-45fd-9b2f-d490eb225926",
+          "name": "Generate downloadable award data CSV",
+          "request": {
+            "name": "Generate downloadable award data CSV",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "download",
+                "awards",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2961c237-8924-4070-baca-e3a234be526e",
+              "name": "Download generation accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "download",
+                    "awards",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.usaspending.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "17292b47-45e5-4e10-8604-7cd7f02d38cc",
+    "name": "USAspending.gov API (CFO Council context) Agencies Downloads API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Chief Financial Officers Council itself does not operate a developer API. This\nbest-effort OpenAPI documents a subset of the USAspending.gov v2 API operated by the\nU.S. Department of the Treasury, which is the primary federal financial-management\ndata API closely associated with the CFOC remit. Source: https://api.usaspending.gov/docs/endpoints.\n\nContact Support:\n Name: USAspending.gov",
+      "type": "text/plain"
+    }
+  }
+}

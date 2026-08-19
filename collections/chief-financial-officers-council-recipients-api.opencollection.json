@@ -1,0 +1,47 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "USAspending.gov API (CFO Council context) Agencies Recipients API",
+    "version": "2026-05-23"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Recipients",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve recipient listings",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.usaspending.gov/api/v2/recipient/"
+          },
+          "docs": "Retrieve recipient listings"
+        },
+        {
+          "info": {
+            "name": "Get recipient overview",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.usaspending.gov/api/v2/recipient/:HASH_VALUE/",
+            "params": [
+              {
+                "name": "HASH_VALUE",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get recipient overview"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
