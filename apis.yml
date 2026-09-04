@@ -44,7 +44,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chief-fina
 access: 3rd-Party
 created: '2024-12-03'
 modified: '2026-07-25'
-position: Consumer
+position: Consuming
 specificationVersion: '0.23'
 description: >-
   The Chief Financial Officers Council (CFOC) was established by the Chief
