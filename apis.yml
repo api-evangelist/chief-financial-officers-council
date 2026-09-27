@@ -4,7 +4,7 @@ url: >-
 name: Chief Financial Officers Council
 tags:
   - Federal Financial Management
-  - Federal-Government
+  - Federal Government
   - Finance
   - Government
   - OMB
@@ -16,6 +16,7 @@ tags_raw:
   - Government
   - OMB
   - Treasury
+  - Federal-Government
 type: Index
 deliveryModel:
   model: unknown
