@@ -1,4 +1,4 @@
-# Chief Financial Officers Council (chief-financial-officers-council)
+# Chief Financial Officers Council
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,137 +66,130 @@
 
 The Chief Financial Officers Council (CFOC) was established by the Chief Financial Officers (CFO) Act of 1990 (Public Law 101-576) and is composed of the CFOs and Deputy CFOs of the 24 largest federal departments and agencies, along with senior officials from the Office of Management and Budget (OMB) and the Department of the Treasury. The Council works collaboratively to improve federal financial management through shared guidance, working groups, and inter-agency standards. While the CFO Council itself does not operate a developer API program, its remit is closely tied to the larger ecosystem of federal financial management data and APIs administered by Treasury (USAspending.gov, Fiscal Service), OMB (PaymentAccuracy.gov, MAX.gov), and GSA (Performance.gov, SAM.gov).
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/chief-financial-officers-council/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/chief-financial-officers-council/refs/heads/main/apis.yml)
+**Areas:** Federal Financial Management · Federal Government · Finance · Government · OMB · Treasury
 
-## Scope
+## Chief Financial Officers Council on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Chief Financial Officers Council is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/chief-financial-officers-council/](https://apis.io/providers/chief-financial-officers-council/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (11)
 
-- Federal Financial Management
-- Federal Government
-- Finance
-- Government
-- OMB
-- Treasury
+- [CFO Council Website](https://apis.io/apis/chief-financial-officers-council/cfoc-website/) — The cfo.gov public website is the official portal for the federal CFO Council, hosting member rosters, council news, working-group outputs,…
+- [CFO Council Working Groups](https://apis.io/apis/chief-financial-officers-council/cfoc-working-groups/) — The CFO Council operates topical working groups covering areas such as financial systems, internal control, grants management, payment integrity, financial…
+- [USAspending.gov API (Treasury)](https://apis.io/apis/chief-financial-officers-council/usaspending/) — USAspending.gov is the Treasury-operated public source of accountable federal spending data, exposing a comprehensive REST API for federal awards,…
+- [Chief Financial Officers Council Agencies API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-agencies-api/) — The Agencies API from Chief Financial Officers Council — 2 operation(s) for agencies.
+- [Chief Financial Officers Council Awards API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-awards-api/) — The Awards API from Chief Financial Officers Council — 3 operation(s) for awards.
+- [Chief Financial Officers Council Downloads API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-downloads-api/) — The Downloads API from Chief Financial Officers Council — 1 operation(s) for downloads.
+- [Chief Financial Officers Council Federal Accounts API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-federal-accounts-api/) — The Federal Accounts API from Chief Financial Officers Council — 1 operation(s) for federal accounts.
+- [Chief Financial Officers Council Recipients API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-recipients-api/) — The Recipients API from Chief Financial Officers Council — 2 operation(s) for recipients.
+- [Chief Financial Officers Council References API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-references-api/) — The References API from Chief Financial Officers Council — 2 operation(s) for references.
+- [Chief Financial Officers Council Search API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-search-api/) — The Search API from Chief Financial Officers Council — 3 operation(s) for search.
+- [Chief Financial Officers Council Subawards API](https://apis.io/apis/chief-financial-officers-council/chief-financial-officers-council-subawards-api/) — The Subawards API from Chief Financial Officers Council — 1 operation(s) for subawards.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### CFO Council Website
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The cfo.gov public website is the official portal for the federal CFO Council, hosting member rosters, council news, working-group outputs, financial-management policy guidance, and links to companion federal financial-management resources.
+- [Chief Financial Officers Council Agentic Access](https://apis.io/agentic-access/chief-financial-officers-council/chief-financial-officers-council-agentic-access/)
 
-- **Human URL:** [https://www.cfo.gov/](https://www.cfo.gov/)
+#### Collections (9)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Council
-- Federal Financial Management
-- Resources
+- [USAspending.gov API (CFO Council context)](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council/)
+- [USAspending.gov API (CFO Council context) Agencies API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-agencies-api/)
+- [USAspending.gov API (CFO Council context) Agencies Awards API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-awards-api/)
+- [USAspending.gov API (CFO Council context) Agencies Downloads API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-downloads-api/)
+- [USAspending.gov API (CFO Council context) Agencies Federal Accounts API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-federal-accounts-api/)
+- [USAspending.gov API (CFO Council context) Agencies Recipients API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-recipients-api/)
+- [USAspending.gov API (CFO Council context) Agencies References API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-references-api/)
+- [USAspending.gov API (CFO Council context) Agencies Search API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-search-api/)
+- [USAspending.gov API (CFO Council context) Agencies Subawards API](https://apis.io/collections/chief-financial-officers-council/open-chief-financial-officers-council-subawards-api/)
 
-#### Properties
+#### Security (1)
 
-- [Website](https://www.cfo.gov/)
-- [About](https://www.cfo.gov/about-the-council/)
-- [Resources](https://www.cfo.gov/resources/)
-- [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### CFO Council Working Groups
+- [Chief Financial Officers Council Domain Security](https://apis.io/security/chief-financial-officers-council/chief-financial-officers-council-domain-security/)
 
-The CFO Council operates topical working groups covering areas such as financial systems, internal control, grants management, payment integrity, financial reporting, and data analytics. Working-group products including white papers, playbooks, and recommended practices are published on cfo.gov.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://www.cfo.gov/working-groups/](https://www.cfo.gov/working-groups/)
+Published plans, tiers and prices.
 
-#### Tags
+- [Chief Financial Officers Council Plans Pricing](https://apis.io/plans/chief-financial-officers-council/chief-financial-officers-council-plans-pricing/)
 
-- Inter-Agency
-- Standards
-- Working Groups
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Website](https://www.cfo.gov/working-groups/)
-- [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Chief Financial Officers Council Rate Limits](https://apis.io/rate-limits/chief-financial-officers-council/chief-financial-officers-council-rate-limits/)
 
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Improper Payments
-- Open Data
-- Payment Integrity
+- [Chief Financial Officers Council Finops](https://apis.io/finops/chief-financial-officers-council/chief-financial-officers-council-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Website](https://www.paymentaccuracy.gov/)
-- [Data](https://www.paymentaccuracy.gov/payment-accuracy-the-numbers/)
-- [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### USAspending.gov API (Treasury)
-
-USAspending.gov is the Treasury-operated public source of accountable federal spending data, exposing a comprehensive REST API for federal awards, contracts, grants, sub-awards, and agency budget data. CFO Council members rely on USAspending data quality and standards (DAIMS) for transparency reporting.
-
-- **Human URL:** [https://api.usaspending.gov/](https://api.usaspending.gov/)
-
-#### Tags
-
-- Federal Spending
-- Open Data
-- Treasury
-
-#### Properties
-
-- [Website](https://api.usaspending.gov/)
-- [Documentation](https://api.usaspending.gov/docs/endpoints)
-- [Base U R L](https://api.usaspending.gov/api/v2/)
-- [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-
-#### Tags
-
-- Performance Management
-- Treasury Performance
-
-#### Properties
-
-- [Website](https://www.performance.gov/)
-- [About](https://www.performance.gov/about/)
-- [Postman Collection](collections/chief-financial-officers-council.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chief-financial-officers-council.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cfo.gov/)
-- [About](https://www.cfo.gov/about-the-council/)
-- [Resources](https://www.cfo.gov/resources/)
-- [Working Groups](https://www.cfo.gov/working-groups/)
-- [News](https://www.cfo.gov/news/)
-- [Events](https://www.cfo.gov/events/)
-- [Members](https://www.cfo.gov/members/)
-- [Contact](mailto:CFOC.support@gsa.gov)
-- [Privacy Policy](https://www.cfo.gov/privacy-policy/)
-- [Accessibility Statement](https://www.cfo.gov/accessibility/)
-- [U S Aspending](https://www.usaspending.gov/)
-- [Payment Accuracy](https://www.paymentaccuracy.gov/)
-- [Performance Gov](https://www.performance.gov/)
-- [O M B](https://www.whitehouse.gov/omb/)
-- [Treasury](https://home.treasury.gov/)
-- [G S A](https://www.gsa.gov/)
-- [Program Areas](undefined)
-- [Working Groups](undefined)
+- [Privacy policy](https://www.cfo.gov/privacy-policy/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 20.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.0 |
+| Contract quality | 41.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 13.2 |
+
+**Agent readiness 15.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 7.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/chief-financial-officers-council/](https://apis.io/providers/chief-financial-officers-council/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Chief Financial Officers Council: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/chief-financial-officers-council/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
